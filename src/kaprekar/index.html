@@ -21,10 +21,14 @@
         <!-- Add your site or application content here -->
         <div id="app">
         <h2>Kaprekar Numbers Caclulator</h2>
-        <p>Kaprekar numbers in the range of {{rangeStart}} and {{rangeEnd}}: {{computeKaprekar()}}</p>
+        <p>
+          Kaprekar numbers in the range of {{rangeStart}} and {{rangeEnd}}: {{computeKaprekar()}}
+        </p>
+        <p>Enter a integer range:
           <input v-model.number="rangeStart" type="number">
           <input v-model.number="rangeEnd" type="number">
-          <button v-on:click="computeKaprekar">Compute Kaprekar numbers</button>
+        </p>
+        <p>{{error}}</p>
         </div>
 
         <script src="vue.js"></script>
